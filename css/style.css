@@ -1,0 +1,582 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 150vh;
+    background: -webkit-linear-gradient(top , rgb(134, 7, 7),rgb(34, 3, 3), rgb(15, 1, 1));
+}
+.header{
+    width: 100%;
+    height: 70px;
+    background: -webkit-linear-gradient(top , rgb(26, 4, 4) , rgb(83, 8, 8));
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 100;
+}
+.search-box{
+    width: 170px;
+    height: 30px;
+    background-color: white;
+    margin: 20px 0px 0px 30px;
+    border: 0.5px solid white;
+    border-radius: 30px;
+    position: absolute;
+}
+.search-logo i{
+    font-size: 20px;
+    color: black;
+    margin: 26px 0px 0px 37px;
+    position: absolute;
+}
+.links ul{
+    margin-left: 700px;
+    margin-top: 18px;
+} 
+.links ul li{
+    float: left;
+    list-style: none;
+    margin-left: 60px;
+    font-size: 22px;
+}
+.links ul li a{
+    color: white;
+    text-decoration: none;
+}
+.links li a{
+    position: relative;
+    color: gold;
+    text-decoration: none;
+}
+.links li a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height:3px; 
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    opacity: 1;
+}
+.links li a:hover::after{
+    width:100%;
+    
+    opacity: 0,7;
+    transition: 1s;
+}
+
+.parent-1{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    margin-top: 130px;
+
+}
+.sec1{
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+
+}
+.front-1{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img1.jpg);
+    background-size: cover;
+    border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+
+
+}
+.back-1{
+     width: 250px;
+    height: 300px;
+    background-color: rgb(53, 6, 6);
+     border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -130px;
+    position: absolute;
+}
+.price-1{
+     color: white;
+    font-size: 20px;
+    margin-top: 80px;
+}
+.info-1{
+    color: rgb(230, 108, 108);
+    font-size: 20px;
+    margin-top: 80px;
+}
+.info-11{
+    color: white;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.price-1{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btn-1{
+    color: white;
+    background-color:rgb(131, 23, 23) ;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    border: 0.1px solid rgb(172, 77, 77);
+    border-radius: 8px;
+    height: 30px;
+}
+.sec1:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec2{
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+
+}
+.front-2{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img2.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+
+}
+.back-2{
+     width: 250px;
+    height: 300px;
+    background-color: rgb(53, 6, 6);
+     border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-2{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -66px;
+    position: absolute;
+}
+.info-2{
+       color: rgb(230, 108, 108);
+    font-size: 20px;
+    margin-top: 60px;
+}
+.info-22{
+    color: white;
+    font-size: 13PX;
+}
+.price-2{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.btn-2{
+    color: white;
+    background-color:rgb(131, 23, 23) ;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    border: 0.1px solid rgb(172, 77, 77);
+    border-radius: 8px;
+    height: 30px;
+}
+.sec2:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec3{
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+
+}
+.front-3{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img3.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+
+}
+.back-3{
+      width: 250px;
+    height: 300px;
+    background-color: rgb(53, 6, 6);
+     border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-3{
+     color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -92px;
+    position: absolute;
+}
+.info-3{
+       color: rgb(230, 108, 108);
+    font-size: 20px;
+    margin-top: 50px;
+}
+.info-33{
+    color: white;
+    font-size: 13PX;
+}
+.price-3{
+    color: white;
+    font-size: 20px;
+    margin-top: 16px;
+}
+.btn-3{
+    color: white;
+    background-color:rgb(131, 23, 23) ;
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    border: 0.1px solid rgb(172, 77, 77);
+    border-radius: 8px;
+    height: 30px;
+}
+.sec3:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec4{
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+
+}
+.front-4{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img4.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+
+}
+.back-4{
+     width: 250px;
+    height: 300px;
+     background-color: rgb(53, 6, 6);
+      border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-4{
+     color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -130px;
+    position: absolute;
+}
+.info-4{
+       color: rgb(230, 108, 108);
+    font-size: 20px;
+    margin-top: 70px;
+}
+.info-44{
+    color: white;
+    font-size: 13PX;
+}
+.price-4{
+    color: white;
+    font-size: 20px;
+    margin-top: 16px;
+}
+.btn-4{
+    color: white;
+    background-color:rgb(131, 23, 23) ;
+    margin-top: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    width: 100px;
+    border: 0.1px solid rgb(172, 77, 77);
+    border-radius: 8px;
+    height: 30px;
+}
+.sec4:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.parent-2{
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    margin-top: 130px;
+}
+.sec-11{
+    margin-left: 40px;
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+}
+.front-11{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img5.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+}
+.back-11{
+     width: 250px;
+    height: 300px;
+     background-color: rgb(53, 6, 6);
+      border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.sec-11:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec-22{
+    margin-left: 40px;
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+}
+.front-22{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img6.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+}
+.back-22{
+     width: 250px;
+    height: 300px;
+     background-color: rgb(53, 6, 6);
+      border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.sec-22:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec-33{
+    margin-left: 40px;
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+}
+.front-33{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img7.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+}
+.back-33{
+     width: 250px;
+    height: 300px;
+     background-color: rgb(53, 6, 6);
+      border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-33{
+  color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -63px;
+    position: absolute;
+}
+.info-7{
+    margin-top: 60px;
+    color: rgb(230, 108, 108);
+    font-size: 20px;
+}
+.price-7{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    
+}
+
+.sec-33:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+.sec-44{
+    margin-left: 40px;
+     margin: auto;
+    position: relative;
+    transition: all 2s ;
+    transform-style: preserve-3d;
+    width: 250px;
+    height: 300px;
+}
+.front-44{
+    width: 250px;
+    height: 300px;
+    background-image: url(../img/img8.jpg);
+     border: 0 solid white;
+    border-radius: 10px;
+    background-size: cover;
+    position: absolute;
+    z-index: 2;
+     backface-visibility: hidden;
+}
+.back-44{
+     width: 250px;
+    height: 300px;
+     background-color: rgb(53, 6, 6);
+      border: 0 solid white;
+    border-radius: 10px;
+    position: absolute;
+    transform:rotateY(180deg);
+    text-align: center;
+}
+.label-44{
+    color: white;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: -75px;
+    position: absolute;
+}
+.info-8{
+    margin-top: 60px;
+    color: rgb(230, 108, 108);
+    font-size: 20px;
+}
+.sec-44:hover{
+    transition: 2s;
+    transform:rotateY(180deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
